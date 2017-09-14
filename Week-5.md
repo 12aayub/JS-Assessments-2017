@@ -6,10 +6,12 @@ Try your best to answer each question on your own before looking up the answer o
 
 #### 1. Comment this code from an express server to explain what each part is doing.
 
+<!-- When on root/home page, print "Hello World!" -->
 app.get('/', function (request, response) {
  response.send('Hello World!');
 });
 
+<!-- Waits to receive request for localhost:3000, displays in console that it's listening -->
 app.listen(3000, function () {
  console.log('Example app listening on port 3000!');
 });
@@ -19,10 +21,14 @@ app.listen(3000, function () {
 #### 2. We have now used both EJS and React to render views with dynamic javascript content (If you want a refresher, take a look at the "Full Stack Express" day). Compare and contrast the two approaches, include a pro and con of each. Which one did you prefer?
 
 // Your answer
+  Express is a framework in Node that
 
+  React is a library in Node that uses State and Props to manage different content, while Express is a framework using models and controller functions, they're both part of Node to render dynamic content and can be full-stack in scale. React can utilize same components for a condensed application, but is harder to know exactly how to work around JSX as a new syntax.
 
 // Googled answer
+Express is a web development framework for NodeJS. It makes possible to map JS methods to specific HTTP requests.
 
+React, on the other hand, is a library, created by Facebook, used to create user interfaces.Virtual DOM in ReactJS makes user experience better and developer’s work faster. High pace of development with tools being updated very frequently makes it hard to keep up on documentation.
 
 #### 3. Sequelize and Express are the Model and Controller portions of our MVC structure. How the two relate and pass information between each other is important to understand but can be hard to follow. Below are some generic events that happen when a browser requests a web page, but they are not in order. Put them in order and also specify whether the task is done by Sequelize or Express. The first step has been given to you as an example:
 
@@ -94,8 +100,6 @@ describe('Test the root path', ()=>{
 
 
 
-#### 10.  Try to explain what an express router does in your own words. 
+#### 10.  Try to explain what an express router does in your own words.
 
  //Your Answer
-
-
